@@ -1,15 +1,12 @@
 import React, { PureComponent } from 'react';
-import { View, Text } from 'react-native';
+import LoginView from '../view/LoginView';
 
 class LoginViewController extends PureComponent {
 
     render() {
         const { loginViewModel } = this.props;
-
         return (
-            <View style={styles.container}>
-                <Text> Login View Controller </Text>
-            </View>
+            <LoginView {...loginViewModel} />
         )
     }
 }

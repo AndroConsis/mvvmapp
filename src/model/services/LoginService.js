@@ -3,6 +3,8 @@ import { observable, action } from 'mobx';
 class LoginService {
 
     @observable employees = [];
+    @observable email = "some@email.com";
+    @observable password = "Password";
 
     @action addEmployee(employee) {
         this.employees.push({
